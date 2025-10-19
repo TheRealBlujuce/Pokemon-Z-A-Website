@@ -1,0 +1,28 @@
+<!-- Login Modal -->
+<div id="login-modal" class="fixed inset-0 bg-black/50 hidden items-center justify-center z-50">
+    <div class="bg-white rounded-xl shadow-lg p-6 w-[32rem] h-[24rem] relative">
+    <button id="close-login" 
+            class="p-2 absolute top-2 right-4 text-gray-500 scale-[200%] 
+                    transition-in-out duration-[0.3s] hover:text-black hover:scale-[205%] hover:cursor-pointer">&times;</button>
+    <h2 class="text-4xl font-bold mb-12 text-center">Login</h2>
+    <form id="login-form" class="flex flex-col gap-3 w-[75%] place-self-center justify-center">
+        <input  type="email" id="email" placeholder="Email" autocomplete="off"
+                class=" outline-none rounded-xl p-2 bg-black/5 placeholder-gray-700
+                        transition-in-out duration-[0.3s] focus:scale-[105%] focus:bg-violet-600/10 focus:text-black" required />
+        <input  type="password" id="password" placeholder="Password" 
+                class=" outline-none rounded-xl p-2 bg-black/5 placeholder-gray-700
+                        transition-in-out duration-[0.3s] focus:scale-[105%] focus:bg-violet-600/10 focus:text-black" required />
+        <button type="submit" 
+                class="bg-blue-700/64 text-white rounded p-2 hover:bg-blue-800/80 scale-[100%] 
+                transition-in-out duration-[0.3s] hover:cursor-pointer hover:scale-[105%]">
+        Login</button>
+        <button id="logout-btn" type="button"
+            class="bg-red-600/64 text-white rounded p-2 hover:bg-red-800/80 scale-[100%] 
+            transition-in-out duration-[0.3s] hover:cursor-pointer hover:scale-[105%]">
+            Log Out</button>
+    </form>
+    <p id="login-error" class="text-red-500 text-sm mt-2 hidden"></p>
+    </div>
+
+
+</div>

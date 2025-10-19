@@ -1,0 +1,29 @@
+<!-- promptPokemon.html -->
+<div
+  id="custom-prompt"
+  class="fixed inset-0 bg-black/50 flex items-center justify-center z-[10000] hidden"
+>
+  <div class="bg-gray-800 text-white p-6 rounded-xl shadow-lg w-80 max-w-[90%] text-center">
+    <h2 id="prompt-message" class="text-lg font-bold mb-4"></h2>
+    <input
+      id="pokemon-input"
+      type="text"
+      placeholder="e.g. Charizard"
+      class="w-full p-2 mb-4 rounded border-none text-center text-white placeholder-gray-400"
+    />
+    <div class="flex justify-center gap-4">
+      <button
+        id="confirm-btn"
+        class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded"
+      >
+        OK
+      </button>
+      <button
+        id="cancel-btn"
+        class="bg-gray-600 hover:bg-gray-700 text-white font-bold py-1 px-4 rounded"
+      >
+        Cancel
+      </button>
+    </div>
+  </div>
+</div>

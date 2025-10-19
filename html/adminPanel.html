@@ -1,0 +1,64 @@
+
+  <!-- Admin Panel -->
+  <div id="admin-panel" class="p-6 bg-slate-500 h-[48rem] hidden">
+    <h1 class="text-3xl font-bold mb-6 text-white">Admin Panel</h1>
+  
+    <!-- Select type of data -->
+    <div class="mb-4">
+      <label for="data-type" class="font-semibold text-white">Select Data Type:</label>
+      <select id="data-type" class="outline-none bg-black/10 text-white rounded p-2 w-[25rem]">
+        <option value="pokemon">Pokemon</option>
+        <option value="move">Move</option>
+      </select>
+    </div>
+  
+    <!-- Form for adding/updating data -->
+    <form id="data-form" class="flex flex-col gap-3 mb-6">
+      <!-- Pokemon fields -->
+      <div id="pokemon-fields" class="">
+        <input type="text" name="pokemon-name" id="pokemon-name" placeholder="Pokemon Name" class="outline-none bg-black/10 text-white rounded p-2" required />
+        <input type="text" name="pokemon-url" id="pokemon-url" placeholder="Image URL" class="outline-none bg-black/10 text-white rounded p-2" required />
+        <input type="text" name="pokemon-type1" id="pokemon-type1" placeholder="Type 1" class="outline-none bg-black/10 text-white rounded p-2" required />
+        <input type="text" name="pokemon-type2" id="pokemon-type2" placeholder="Type 2 (optional)" class="outline-none bg-black/10 text-white rounded p-2" />
+        <input type="text" name="pokemon-location" id="pokemon-location" placeholder="Location" class="outline-none bg-black/10 text-white rounded p-2" required />
+        <input type="text" name="pokedex-number" id="pokedex-number" placeholder="Pokedex #" class="outline-none bg-black/10 text-white rounded p-2" required />
+        
+        <div class="p-2"></div>
+
+        <div class="mb-4 flex flex-row gap-6 items-center">
+          <label for="pokemon-mega" class="font-semibold text-white">Can Mega Evolve</label>
+          <select id="pokemon-mega" class="outline-none bg-black/10 text-white rounded p-2 w-[25rem]">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+
+        <div class="mb-4 flex flex-row gap-12 items-center">
+          <label for="pokemon-alpha" class="font-semibold text-white">Can Be Alpha</label>
+          <select id="pokemon-alpha" class="outline-none bg-black/10 text-white rounded p-2 w-[25rem]">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+
+      </div>
+  
+      <!-- Move fields -->
+      <div id="move-fields" class="hidden">
+        <input type="text" name="move-name" id="move-name" placeholder="Move Name" class="outline-none bg-black/10 text-white rounded p-2" required />
+        <input type="text" name="move-type" id="move-type" placeholder="Move Type" class="outline-none bg-black/10 text-white rounded p-2" required />
+        <input type="number" name="move-cooldown" id="move-cooldown" placeholder="Cooldown (seconds)" class="outline-none bg-black/10 text-white rounded p-2" required />
+      </div>
+  
+      <button type="submit" class="bg-green-500 text-white p-2 rounded hover:bg-green-600 w-[16rem]">Add / Update</button>
+    </form>
+  
+    <!-- Search & manage existing data -->
+    <div class="mb-6">
+      <input type="text" id="search-id" placeholder="Enter Pokemon or Move Name / ID" class="outline-none bg-black/10 text-white rounded p-2 mr-2 w-[25rem]">
+      <button id="search-btn" class="bg-blue-500 text-white p-2 rounded hover:bg-blue-600 w-[16rem]">Search</button>
+    </div>
+  
+    <div id="result-container" class="mb-6"></div>
+  </div>
+  

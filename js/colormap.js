@@ -1,0 +1,21 @@
+export const typeColorMap = {
+    normal:   "bg-neutral-400/20 hover:bg-neutral-500/35",
+    fire:     "bg-orange-500/20 hover:bg-orange-600/35",
+    water:    "bg-blue-500/20 hover:bg-blue-600/35",
+    electric:"bg-yellow-400/20 hover:bg-yellow-500/35",
+    grass:    "bg-green-500/20 hover:bg-green-600/35",
+    ice:      "bg-cyan-200/20 hover:bg-cyan-300/35",
+    fighting: "bg-red-500/20 hover:bg-red-600/35",
+    poison:   "bg-purple-400/20 hover:bg-purple-500/35",
+    ground:   "bg-yellow-600/20 hover:bg-yellow-700/35",
+    flying:   "bg-indigo-300/20 hover:bg-indigo-400/35",
+    psychic:  "bg-rose-400/20 hover:bg-rose-600/35",
+    bug:      "bg-green-700/20 hover:bg-green-800/35",
+    rock:     "bg-amber-600/20 hover:bg-amber-700/35",
+    ghost:    "bg-indigo-800/20 hover:bg-indigo-900/35",
+    dragon:   "bg-indigo-600/20 hover:bg-indigo-700/35",
+    dark:     "bg-gray-800/20 hover:bg-gray-900/35",
+    steel:    "bg-slate-400/20 hover:bg-slate-500/35",
+    fairy:    "bg-pink-300/20 hover:bg-pink-400/35",
+  };
+  

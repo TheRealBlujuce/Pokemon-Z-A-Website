@@ -1,0 +1,59 @@
+<!-- Team Builder Container -->
+ <!-- I can make this sticky by adding sticky and top-0 -->
+<div id="team-builder" class="h-[48rem] md:h-[32rem] lg:h-[22rem] bg-indigo-900/50 text-white flex flex-col items-center p-6 "> 
+    <h1 class="text-4xl font-bold mb-6 text-center">Pokémon Team Builder</h1>
+  
+    <!-- Team Slots -->
+    <div
+      id="team-container"
+      class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 w-full max-w-5xl"
+    >
+      <!-- 6 Pokémon Slots -->
+      <div class="team-slot bg-indigo-800/60 rounded-2xl flex flex-col items-center justify-center p-4 border-2 border-dashed border-gray-600 hover:border-blue-400 hover:bg-indigo-800 transition-all duration-300 ease-in-out cursor-pointer" data-slot="1">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/0.png" alt="Empty Slot" class="w-20 h-20 opacity-60 mb-2 transition-transform duration-200" />
+        <p class="text-sm text-white/75">Add Pokémon</p>
+      </div>
+  
+      <div class="team-slot bg-indigo-800/60 rounded-2xl flex flex-col items-center justify-center p-4 border-2 border-dashed border-gray-600 hover:border-blue-400 hover:bg-indigo-800 transition-all duration-300 ease-in-out cursor-pointer" data-slot="2">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/0.png" alt="Empty Slot" class="w-20 h-20 opacity-60 mb-2 transition-transform duration-200" />
+        <p class="text-sm text-white/75">Add Pokémon</p>
+      </div>
+  
+      <div class="team-slot bg-indigo-800/60 rounded-2xl flex flex-col items-center justify-center p-4 border-2 border-dashed border-gray-600 hover:border-blue-400 hover:bg-indigo-800 transition-all duration-300 ease-in-out cursor-pointer" data-slot="3">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/0.png" alt="Empty Slot" class="w-20 h-20 opacity-60 mb-2 transition-transform duration-200" />
+        <p class="text-sm text-white/75">Add Pokémon</p>
+      </div>
+  
+      <div class="team-slot bg-indigo-800/60 rounded-2xl flex flex-col items-center justify-center p-4 border-2 border-dashed border-gray-600 hover:border-blue-400 hover:bg-indigo-800 transition-all duration-300 ease-in-out cursor-pointer" data-slot="4">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/0.png" alt="Empty Slot" class="w-20 h-20 opacity-60 mb-2 transition-transform duration-200" />
+        <p class="text-sm text-white/75">Add Pokémon</p>
+      </div>
+  
+      <div class="team-slot bg-indigo-800/60 rounded-2xl flex flex-col items-center justify-center p-4 border-2 border-dashed border-gray-600 hover:border-blue-400 hover:bg-indigo-800 transition-all duration-300 ease-in-out cursor-pointer" data-slot="5">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/0.png" alt="Empty Slot" class="w-20 h-20 opacity-60 mb-2 transition-transform duration-200" />
+        <p class="text-sm text-white/75">Add Pokémon</p>
+      </div>
+  
+      <div class="team-slot bg-indigo-800/60 rounded-2xl flex flex-col items-center justify-center p-4 border-2 border-dashed border-gray-600 hover:border-blue-400 hover:bg-indigo-800 transition-all duration-300 ease-in-out cursor-pointer" data-slot="6">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/0.png" alt="Empty Slot" class="w-20 h-20 opacity-60 mb-2 transition-transform duration-200" />
+        <p class="text-sm text-white/75">Add Pokémon</p>
+      </div>
+    </div>
+  
+    <!-- Buttons -->
+    <div class="flex flex-col sm:flex-row gap-4 mt-8">
+      <button
+        id="save-team-btn"
+        class="bg-blue-600 hover:bg-blue-700 transition-all duration-200 px-6 py-2 rounded-lg font-bold scale-[100%] hover:scale-[105%] hover:cursor-pointer"
+      >
+        Save Team
+      </button>
+      <button
+        id="clear-team-btn"
+        class="bg-red-600 hover:bg-red-700 transition-all duration-200 px-6 py-2 rounded-lg font-bold scale-[100%] hover:scale-[105%] hover:cursor-pointer"
+      >
+        Clear Team
+      </button>
+    </div>
+  </div>
+  
