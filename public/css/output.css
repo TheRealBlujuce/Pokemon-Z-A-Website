@@ -33,7 +33,6 @@
     --color-blue-800: oklch(42.4% 0.199 265.638);
     --color-indigo-300: oklch(78.5% 0.115 274.713);
     --color-indigo-400: oklch(67.3% 0.182 276.935);
-    --color-indigo-500: oklch(58.5% 0.233 277.117);
     --color-indigo-600: oklch(51.1% 0.262 276.966);
     --color-indigo-700: oklch(45.7% 0.24 277.023);
     --color-indigo-800: oklch(39.8% 0.195 277.366);
@@ -48,7 +47,6 @@
     --color-slate-400: oklch(70.4% 0.04 256.788);
     --color-slate-500: oklch(55.4% 0.046 257.417);
     --color-slate-700: oklch(37.2% 0.044 257.287);
-    --color-slate-900: oklch(20.8% 0.042 265.755);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-gray-500: oklch(55.1% 0.027 264.364);
@@ -319,9 +317,6 @@
   .mb-12 {
     margin-bottom: calc(var(--spacing) * 12);
   }
-  .contents {
-    display: contents;
-  }
   .flex {
     display: flex;
   }
@@ -453,8 +448,14 @@
   .gap-12 {
     gap: calc(var(--spacing) * 12);
   }
+  .gap-\[1\.25rem\] {
+    gap: 1.25rem;
+  }
   .gap-\[1rem\] {
     gap: 1rem;
+  }
+  .gap-\[2rem\] {
+    gap: 2rem;
   }
   .place-self-center {
     place-self: center;
@@ -781,6 +782,9 @@
   .text-center {
     text-align: center;
   }
+  .text-justify {
+    text-align: justify;
+  }
   .text-3xl {
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
@@ -804,6 +808,10 @@
   .text-sm {
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .leading-none {
+    --tw-leading: 1;
+    line-height: 1;
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -917,6 +925,28 @@
   .outline-none {
     --tw-outline-style: none;
     outline-style: none;
+  }
+  .placeholder\:justify-center {
+    &::placeholder {
+      justify-content: center;
+    }
+  }
+  .placeholder\:placeholder\:text-center {
+    &::placeholder {
+      &::placeholder {
+        text-align: center;
+      }
+    }
+  }
+  .placeholder\:text-center {
+    &::placeholder {
+      text-align: center;
+    }
+  }
+  .placeholder\:text-justify {
+    &::placeholder {
+      text-align: justify;
+    }
   }
   .hover\:scale-\[102\%\] {
     &:hover {
@@ -1301,6 +1331,11 @@
       width: 5rem;
     }
   }
+  .md\:w-\[8rem\] {
+    @media (width >= 48rem) {
+      width: 8rem;
+    }
+  }
   .md\:w-\[9rem\] {
     @media (width >= 48rem) {
       width: 9rem;
@@ -1309,6 +1344,11 @@
   .md\:w-\[40\%\] {
     @media (width >= 48rem) {
       width: 40%;
+    }
+  }
+  .md\:w-\[60\%\] {
+    @media (width >= 48rem) {
+      width: 60%;
     }
   }
   .md\:w-\[65\%\] {
@@ -1334,6 +1374,13 @@
   .md\:items-center {
     @media (width >= 48rem) {
       align-items: center;
+    }
+  }
+  .md\:focus\:scale-\[105\%\] {
+    @media (width >= 48rem) {
+      &:focus {
+        scale: 105%;
+      }
     }
   }
   .lg\:h-\[22rem\] {
@@ -1386,6 +1433,10 @@
   syntax: "*";
   inherits: false;
   initial-value: solid;
+}
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
 }
 @property --tw-font-weight {
   syntax: "*";
@@ -1479,6 +1530,7 @@
       --tw-scale-y: 1;
       --tw-scale-z: 1;
       --tw-border-style: solid;
+      --tw-leading: initial;
       --tw-font-weight: initial;
       --tw-shadow: 0 0 #0000;
       --tw-shadow-color: initial;
